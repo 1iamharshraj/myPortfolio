@@ -141,23 +141,15 @@ const resumeData = {
   ],
   projects: [
     {
-      title: "Leo Call Taxi Website",
-      technologies: "Django, HTML, CSS, SQL",
-      date: "March 2024",
+      title: "Autism Prediction System",
+      technologies: "TensorFlow, VGG16, XGBoost, OpenCV, FastAPI, Go, Next.js",
+      date: "Feb 2025",
       description: [
-        "Designed and developed an interactive website for a local cab company using Django to convert 80 to 100% customers to online mode.",
-        "Incorporated a user-friendly booking system, aimed at a 40% increase in online bookings within the first month of launch",
-        "Optimized website performance and responsiveness, leading to a 20% reduction in bounce rate.",
-      ],
-    },
-    {
-      title: "GeoLocator Application",
-      technologies: "Python, Kotlin, XML, Android Studio",
-      date: "March 2023",
-      description: [
-        "Engineered a geotagging-based application, pioneering its creation for research purposes and contributing expertise to both front-end and back-end development.",
-        "Enhanced location accuracy by 25% compared to existing solutions through algorithm optimization.",
-        "Revolutionized the operational workflow by transitioning from a manual system to a digital platform, reducing work time by approximately 75%, thereby substantially boosting operational efficiency.",
+        "Developed a multi-modal detection system combining VGG16 CNN for facial video analysis and XGBoost ensemble for behavioral data, achieving 92% classification accuracy.",
+        "Processed facial frames using MTCNN extraction with 88% F1-score for emotion/gesture recognition.",
+        "Built scalable backend architecture with Go for core services and FastAPI for model inference.",
+        "Created interactive dashboards using Next.js to visualize model predictions and patient insights.",
+        "Reduced screening costs by 40% compared to traditional methods in pilot clinical deployments."
       ],
     },
     {
@@ -180,6 +172,83 @@ const resumeData = {
         "Achieved a 2 to 3% enhancement across all evaluation metrics, including sensitivity, specificity, and accuracy, subsequent to the augmentation of the dataset with 3600 additional images.",
       ],
     },
+
+    {
+      title: "Infintiy Fitness",
+      technologies: "Kotlin, XML, Room Database, WhatsApp API",
+      date: "September 2024",
+      description: [
+        "Built gym management app with WhatsApp integration for automated billing and payment reminders.",
+        "Implemented due date alert system sending notifications directly to members' WhatsApp.",
+        "Configured daily Firebase backups of Room Database to prevent data loss.",
+      ],
+    },
+
+    {
+      title: "Document Understanding Bot (RAG)",
+      technologies: "Python, Hugging Face Transformers, FAISS, TensorFlow",
+      date: "June 2024",
+      description: [
+        "Developed RAG-based document Q&A system supporting PDF/DOCX/TXT files",
+        "Implemented FAISS vector search for document retrieval & BART/T5 for answer generation",
+        "Enabled context-aware question answering from uploaded documents with 85% relevance score",
+      ],
+    },
+
+    {
+      title: "CryptoCommerce",
+      technologies: "Blockchain, Solidity, React.js, RFID, NodeMCU",
+      date: "December 2023",
+      description: [
+        "Built blockchain-based e-commerce platform with RFID product authentication.",
+        "Implemented tamper detection system using ultrasonic sensors (99% accuracy).",
+        "Developed cryptocurrency payment integration with Ethereum smart contracts.",
+      ],
+    },
+
+    {
+      title: "AR/VR Zoo",
+      technologies: "Python, OpenCV, ArUco, PyOpenGL",
+      date: "November 2023",
+      description: [
+        "Created marker-based AR experience projecting 3D animal models using ArUco markers.",
+        "Integrated voice control via Google Speech API for interactive commands.",
+        "Developed cross-platform support for both desktop and VR headset displays.",
+      ],
+    },
+    {
+      title: "3D Protein Structure Prediction using Deep Learning – Attention-based Modeling of Amino Acid Sequences",
+      technologies: "Python (Programming Language) , TensorFlow , Biopython ,pandas , NumPy",
+      date: "June 2024",
+      description: [
+        "Sequence-to-Structure Pipeline: " +
+        "Transformed protein sequences into spatial 3D coordinates of atoms using an end-to-end deep learning architecture.\n",
+        "Attention-Based Architecture: " +
+        "Used attention mechanisms (inspired by models like AlphaFold, ESM, or custom Transformer-based encoders) to capture long-range dependencies and residue interactions.\n",
+        "This project focuses on predicting the 3D structure of proteins from their amino acid sequences using advanced deep learning techniques. By leveraging attention mechanisms and structural biology knowledge, the model aims to solve a core problem in bioinformatics: accurately mapping 1D sequences to 3D molecular conformations.",
+      ],
+    },
+    {
+      title: "Leo Call Taxi Website",
+      technologies: "Django, HTML, CSS, SQL",
+      date: "March 2024",
+      description: [
+        "Designed and developed an interactive website for a local cab company using Django to convert 80 to 100% customers to online mode.",
+        "Incorporated a user-friendly booking system, aimed at a 40% increase in online bookings within the first month of launch",
+        "Optimized website performance and responsiveness, leading to a 20% reduction in bounce rate.",
+      ],
+    },
+
+    {
+      title: "GeoLocator Application",
+      technologies: "Python, Kotlin, XML, Android Studio",
+      date: "March 2023",
+      description: [
+        "Engineered a geotagging-based application, pioneering its creation for research purposes and contributing expertise to both front-end and back-end development.",
+        "Enhanced location accuracy by 25% compared to existing solutions through algorithm optimization.",
+        "Revolutionized the operational workflow by transitioning from a manual system to a digital platform, reducing work time by approximately 75%, thereby substantially boosting operational efficiency.",
+      ],
+    }
   ],
   publications: [
     {

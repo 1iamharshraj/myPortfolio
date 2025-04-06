@@ -27,6 +27,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { TabsList, TabsTrigger, Tabs } from "@/components/ui/tabs"
 import { useState, useEffect } from "react"
 
+// @ts-ignore
 export function Resume({ activeSection, setActiveSection }) {
   const resume = useResume()
   const [isMobile, setIsMobile] = useState(false)
@@ -81,6 +82,7 @@ export function Resume({ activeSection, setActiveSection }) {
 }
 
 // Navigation tabs
+// @ts-ignore
 function NavTabs({ activeSection, setActiveSection }) {
   const tabs = [
     { id: "about", label: "About", icon: <User className="w-4 h-4" /> },
@@ -137,6 +139,7 @@ function AboutSection() {
                       src="/121369929.png" // Replace this with your actual image URL or path
                       alt="Profile"
                       className="w-full h-full object-cover"
+                      style={{filter:"invert(0)"}}
                   />
                 </div>
 
@@ -147,7 +150,7 @@ function AboutSection() {
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <div className="bg-purple-900/30 p-2 rounded-full">
-                    <Mail className="w-4 h-4 text-purple-400" />
+                    <Mail className="w-4 h-4 text-purple-400"/>
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Email</p>
@@ -159,7 +162,7 @@ function AboutSection() {
 
                 <div className="flex items-center gap-3">
                   <div className="bg-purple-900/30 p-2 rounded-full">
-                    <Phone className="w-4 h-4 text-purple-400" />
+                    <Phone className="w-4 h-4 text-purple-400"/>
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Phone</p>
@@ -171,7 +174,7 @@ function AboutSection() {
 
                 <div className="flex items-center gap-3">
                   <div className="bg-purple-900/30 p-2 rounded-full">
-                    <MapPin className="w-4 h-4 text-purple-400" />
+                    <MapPin className="w-4 h-4 text-purple-400"/>
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Location</p>
@@ -181,51 +184,69 @@ function AboutSection() {
 
                 <div className="flex items-center gap-3">
                   <div className="bg-purple-900/30 p-2 rounded-full">
-                    <Linkedin className="w-4 h-4 text-purple-400" />
+                    <Linkedin className="w-4 h-4 text-purple-400"/>
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">LinkedIn</p>
                     <a
-                      href={`https://${personal.linkedin}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-white hover:text-purple-300 transition-colors flex items-center gap-1"
+                        href={`https://${personal.linkedin}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white hover:text-purple-300 transition-colors flex items-center gap-1"
                     >
-                      {personal.linkedin.split("/").pop()} <ExternalLink className="w-3 h-3" />
+                      {personal.linkedin.split("/").pop()} <ExternalLink className="w-3 h-3"/>
+                    </a>
+                  </div>
+                </div>
+
+
+                <div className="flex items-center gap-3">
+                  <div className="bg-purple-900/30 p-2 rounded-full">
+                    <Code className="w-4 h-4 text-purple-400"/>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-400">LeetCode</p>
+                    <a
+                        href={'https://leetcode.com/u/Iamharshraj/'}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white hover:text-purple-300 transition-colors flex items-center gap-1"
+                    >
+                      {personal.linkedin.split("/").pop()} <ExternalLink className="w-3 h-3"/>
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-3">
                   <div className="bg-purple-900/30 p-2 rounded-full">
-                    <Github className="w-4 h-4 text-purple-400" />
+                    <Github className="w-4 h-4 text-purple-400"/>
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">GitHub</p>
                     <a
-                      href={personal.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-white hover:text-purple-300 transition-colors flex items-center gap-1"
+                        href={personal.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white hover:text-purple-300 transition-colors flex items-center gap-1"
                     >
-                      {personal.github.split("/").pop()} <ExternalLink className="w-3 h-3" />
+                      {personal.github.split("/").pop()} <ExternalLink className="w-3 h-3"/>
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-3">
                   <div className="bg-purple-900/30 p-2 rounded-full">
-                    <Database className="w-4 h-4 text-purple-400" />
+                    <Database className="w-4 h-4 text-purple-400"/>
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Kaggle</p>
                     <a
-                      href={personal.kaggle}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-white hover:text-purple-300 transition-colors flex items-center gap-1"
+                        href={personal.kaggle}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white hover:text-purple-300 transition-colors flex items-center gap-1"
                     >
-                      {personal.kaggle.split("/").pop()} <ExternalLink className="w-3 h-3" />
+                      {personal.kaggle.split("/").pop()} <ExternalLink className="w-3 h-3"/>
                     </a>
                   </div>
                 </div>
