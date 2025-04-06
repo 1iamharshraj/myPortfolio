@@ -51,14 +51,13 @@ export function Resume({ activeSection, setActiveSection }) {
       <header className="sticky top-0 z-50 bg-black/80 backdrop-blur-md border-b border-purple-900/30">
         <div className="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center mb-4 md:mb-0">
-            <div className="w-12 h-12 rounded-full overflow-hidden mr-3 border-2 border-purple-600 bg-purple-900/30 flex items-center justify-center">
-              <span className="text-2xl font-bold text-white">{resume.personal.name.charAt(0)}</span>
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-white">{resume.personal.name}</h1>
-              <p className="text-sm text-purple-300">{resume.personal.title}</p>
-            </div>
+
+
+          <div>
+            <h1 className="text-xl font-bold text-white">{resume.personal.name}</h1>
+            <p className="text-sm text-purple-300">{resume.personal.title}</p>
           </div>
+        </div>
 
           <nav className="flex overflow-x-auto pb-2 md:pb-0 w-full md:w-auto">
             <NavTabs activeSection={activeSection} setActiveSection={setActiveSection} />
@@ -132,9 +131,15 @@ function AboutSection() {
             </CardHeader>
             <CardContent>
               <div className="flex flex-col items-center mb-6">
-                <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-purple-600 mb-4 bg-purple-900/30 flex items-center justify-center">
-                  <span className="text-5xl font-bold text-white">{personal.name.charAt(0)}</span>
+                <div
+                    className="w-32 h-32 rounded-full overflow-hidden border-4 border-purple-600 mb-4 bg-purple-900/30">
+                  <img
+                      src="/121369929.png" // Replace this with your actual image URL or path
+                      alt="Profile"
+                      className="w-full h-full object-cover"
+                  />
                 </div>
+
                 <h2 className="text-xl font-bold text-white">{personal.name}</h2>
                 <p className="text-purple-400">{personal.title}</p>
               </div>

@@ -47,7 +47,7 @@ export default function Home() {
             style={{ transition: "opacity 0.5s ease-in-out" }}
           >
             <div className="text-white text-2xl font-bold flex items-center">
-              <span className="text-purple-500 mr-2">Data Science</span> Portfolio
+              <span className="text-purple-500 mr-2">Harsh Raj's</span> Portfolio
               <span className="ml-2 animate-pulse">...</span>
             </div>
           </div>

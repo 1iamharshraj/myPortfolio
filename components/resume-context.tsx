@@ -16,7 +16,6 @@ export type Project = {
   date: string
   description: string[]
 }
-
 export type Publication = {
   title: string
   technologies: string
